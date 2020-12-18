@@ -52,7 +52,7 @@ function Sphere(radius){
 
 // Surface Area formulas
 function surfaceAreaCube(side){
-  let result = Math.pow(side,6);
+  let result = 6 * Math.pow(side,2);
   return result;
 }
 
@@ -80,24 +80,23 @@ function perimeterTriangle(side1, side2, side3){
 }
 
 function perimeterCircle(diameter){
-  let result = 2 * diameter * 3.14;
+  let result = 3.14 * diameter;
   return result;
 }
 
-/*
+
 // Volume formulas
 function volumeCube(side){
-  let result =
+  let result = Math.pow(side, 3)
   return result;
 }
 
 function volumeRectangular(length, width, height){
-  let result =
+  let result = length * width * height;
   return result;
 }
 
 function volumeCylinder(radius, height){
-  let result =
+  let result = Math.PI * radius * 2 * height;
   return result;
 }
-*/
